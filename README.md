@@ -1,6 +1,12 @@
 共享动画实现
 ===
 
+实现效果
+---
+![demo view](https://github.com/axlecho/SharedElementTransitionDemo/blob/master/demo.gif?raw=true)
+
+实现过程
+---
 在共享动画的两个view中添加一致的`android:transitionName`
 
 ```
