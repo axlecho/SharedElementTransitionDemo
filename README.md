@@ -7,7 +7,7 @@
 	<string name="transition_name">textview_transition</string>
 
 	<!-- activity_one -->
-    <TextView
+	<TextView
         android:id="@+id/hello_world_textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -20,7 +20,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 		
 	<!-- activity_two -->
-	    <TextView
+	<TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!"
@@ -46,7 +46,8 @@
 代码跳转
 ```
 	String transition_name = this.getResources().getString(R.string.transition_name);
-	ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(this, hellowordTextView, transition_name);
+	ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(this, 
+		hellowordTextView, transition_name);
 
 	Intent intent = new Intent();
 	intent.setClass(this, SecondActivity.class);
